@@ -5,9 +5,9 @@
 <?import javafx.scene.control.Button?>
 
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.numberguesser.HomeController">
-    <Label text="Devine un nombre situé entre 1 et 10 !" />
-    <TextField />
-    <Button text="Devine !" />
-    <Label text="" />
-    <Button text="Recommencer" visible="false" />
+    <Label fx:id="promptLabel" text="Devine un nombre situé entre 1 et 10 !" />
+    <TextField fx:id="inputField" />
+    <Button fx:id="guessButton"  text="Devine !" onAction="#handleGuessing"/>
+    <Label fx:id="feedbackLevel" text="" />
+    <Button fx:id="restartBtn" text="Recommencer" visible="false" onAction="#restart" />
 </VBox>
